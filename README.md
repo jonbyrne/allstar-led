@@ -1,6 +1,9 @@
 # allstar-led
 Raspberry Pi app_rpt LED and Button Tools
 
+Ghetton circuit diagram https://github.com/jonbyrne/allstar-led/blob/master/IMG_20170125_213357.jpg
+
+
 run the following commands
 
 apt-get install git
