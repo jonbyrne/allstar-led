@@ -12,6 +12,8 @@ git clone https://github.com/jonbyrne/allstar-led
 mkdir /etc/asterisk/local/
 cd allstar-led
 mv *.* /etc/asterisk/local/
+chmod +x /etc/asterisk/local/check2.sh
+chmod +x /etc/asterisk/local/check_default.sh
 crontab -e
 
 ##################
