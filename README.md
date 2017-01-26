@@ -6,7 +6,34 @@ Ghetto circuit diagram https://github.com/jonbyrne/allstar-led/blob/master/IMG_2
 
 run the following commands
 
+##### Raspbian Based Build #######
 apt-get install git
+##################################
+
+##### Arch Based Build ###########
+
+pacman -S
+useradd -m -G wheel -s /bin/bash pi
+passwd pi
+>>>>enter password and confirm
+visudo
+>>>>>uncomment line adding all wheel group to sudo by removing the #
+ctrl + x
+y
+enter
+exit
+
+reconnect as pi user you have created then
+
+git clone https://aur.archlinux.org/python-raspberry-gpio.git
+cd python-raspberry-gpio/
+pacman -S fakeroot
+makepkg -si
+exit
+
+reconnect as root
+##################################
+
 cd ~/
 git clone https://github.com/jonbyrne/allstar-led
 mkdir /etc/asterisk/local/
