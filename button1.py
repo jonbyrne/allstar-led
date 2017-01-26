@@ -12,5 +12,5 @@ while True:
   if (GPIO.input(buttonPin)):
     #this is the script that will be called (as root)
     time.sleep(0.05)
-    os.system("/usr/sbin/asterisk  -rx 'rpt fun 40890 *327066'")
+    os.system("/usr/sbin/asterisk  -rx 'rpt fun XXXXX *3YYYYY'")
     print("Connecting.....")
